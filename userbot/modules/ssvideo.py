@@ -44,7 +44,7 @@ async def ssvideo(framecap):
     await framecap.edit("`Downloading media...`")
     ss = await bot.download_media(
         reply_message,
-        "anu.mp4",
+        "video_metadata",
         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
             progress(d, t, framecap, c_time, "[DOWNLOAD]")
         ),
